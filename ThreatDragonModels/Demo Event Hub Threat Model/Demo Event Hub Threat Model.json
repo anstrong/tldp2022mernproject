@@ -39,7 +39,12 @@
               "name": "Data Boundary",
               "description": "",
               "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "hasOpenThreats": false,
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -91,19 +96,6 @@
                   "score": ""
                 },
                 {
-                  "id": "545063b5-5767-40ff-9eff-ae0c01dba053",
-                  "title": "Login State Manipulation",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Elevation of privilege",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 4,
-                  "score": ""
-                },
-                {
                   "id": "732d5d40-ce39-4bfd-84d5-d944dfd65a95",
                   "title": "Plaintext Password",
                   "status": "Open",
@@ -141,136 +133,23 @@
                   "new": false,
                   "number": 13,
                   "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 1,
-                "repudiation": 0,
-                "informationDisclosure": 5,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 2
-              }
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
                 },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "c0cf9bc3-26bd-4ee3-89fc-a5a7c79a3298",
-            "source": {
-              "cell": "6e4d70a1-e4cd-419d-b0cc-53c78125ecb6"
-            },
-            "target": {
-              "cell": "d20683ed-8fb9-492b-9efe-f29a1a7bd92a"
-            },
-            "vertices": [
-              {
-                "x": 760,
-                "y": 120
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "59ce4390-e9a0-4bb1-84f2-dd9b3573f08e",
-            "source": {
-              "cell": "d20683ed-8fb9-492b-9efe-f29a1a7bd92a"
-            },
-            "target": {
-              "x": 790,
-              "y": 150
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
                 {
-                  "id": "40c612b4-5cdc-4cfc-8541-20f14875a722",
-                  "title": "Insecure Protocol",
+                  "id": "778f267f-6fe1-45fe-a06e-f39f18879384",
+                  "title": "Log-In State Manipulation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                },
+                {
+                  "id": "332f81db-3786-44bc-ad69-ac44bf6d2121",
+                  "title": "Verbose Logs",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
@@ -278,37 +157,39 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 14,
+                  "number": 24,
+                  "score": ""
+                },
+                {
+                  "id": "017261d2-693b-4d03-873a-889a87183ede",
+                  "title": "No Timeout",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
                   "score": ""
                 }
               ],
               "threatFrequency": {
+                "spoofing": 1,
                 "tampering": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 0
+                "repudiation": 1,
+                "informationDisclosure": 6,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 3
               }
-            },
-            "id": "70fb9e61-155d-40a9-8d33-901960c2324c",
-            "source": {
-              "x": 430,
-              "y": 120
-            },
-            "target": {
-              "x": 330,
-              "y": 130
-            },
-            "vertices": [
-              {
-                "x": 370,
-                "y": 110
-              }
-            ]
+            }
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -359,108 +240,13 @@
               "cell": "c7538d6b-28cd-4427-aeba-2b69159563c6"
             },
             "target": {
-              "x": 430,
+              "x": 440,
               "y": 140
             },
             "vertices": [
               {
                 "x": 350,
                 "y": 160
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "8b75bbdc-f213-4b2f-9556-f2d306c97050",
-                  "title": "Unfiltered Payload",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 11,
-                  "score": ""
-                },
-                {
-                  "id": "6d97984b-4e8a-4a07-877e-d56c699071be",
-                  "title": "X-Powered-By",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
-                  "score": ""
-                },
-                {
-                  "id": "eaff30e7-3d57-4021-b9b9-12ae862e34e1",
-                  "title": "Insecure Protocol",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 16,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 2,
-                "denialOfService": 0
-              }
-            },
-            "id": "2fdbdea7-5405-42e7-8d22-796e34b86249",
-            "source": {
-              "cell": "d20683ed-8fb9-492b-9efe-f29a1a7bd92a"
-            },
-            "target": {
-              "cell": "ade26220-1d1c-4a28-b5cf-9a09ea0f62f6"
-            },
-            "vertices": [
-              {
-                "x": 600,
-                "y": 144
-              },
-              {
-                "x": 550,
-                "y": 143
               }
             ]
           },
@@ -534,6 +320,272 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ae0b0109-5f72-48b8-a960-920026bee24d",
+                  "title": "NoSQL Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "fb209de1-5c67-46fd-8de3-e1d6e45f6e06",
+                  "title": "Record Duplication",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "id": "59ce4390-e9a0-4bb1-84f2-dd9b3573f08e",
+            "source": {
+              "cell": "d20683ed-8fb9-492b-9efe-f29a1a7bd92a"
+            },
+            "target": {
+              "cell": "6e4d70a1-e4cd-419d-b0cc-53c78125ecb6"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "c0cf9bc3-26bd-4ee3-89fc-a5a7c79a3298",
+            "source": {
+              "cell": "6e4d70a1-e4cd-419d-b0cc-53c78125ecb6"
+            },
+            "target": {
+              "cell": "d20683ed-8fb9-492b-9efe-f29a1a7bd92a"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "8b75bbdc-f213-4b2f-9556-f2d306c97050",
+                  "title": "Unfiltered Payload",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "6d97984b-4e8a-4a07-877e-d56c699071be",
+                  "title": "X-Powered-By: Express",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "2fdbdea7-5405-42e7-8d22-796e34b86249",
+            "source": {
+              "cell": "d20683ed-8fb9-492b-9efe-f29a1a7bd92a"
+            },
+            "target": {
+              "cell": "ade26220-1d1c-4a28-b5cf-9a09ea0f62f6"
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": 144
+              },
+              {
+                "x": 550,
+                "y": 143
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "40c612b4-5cdc-4cfc-8541-20f14875a722",
+                  "title": "Insecure Protocol",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "70fb9e61-155d-40a9-8d33-901960c2324c",
+            "source": {
+              "x": 430,
+              "y": 120
+            },
+            "target": {
+              "x": 330,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 110
+              }
+            ]
+          },
+          {
             "position": {
               "x": 630,
               "y": 100
@@ -580,15 +632,28 @@
                   "new": false,
                   "number": 2,
                   "score": ""
+                },
+                {
+                  "id": "1cc876ef-2ab0-4016-84db-82e83f1cb150",
+                  "title": "No Authorization",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 2,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -623,7 +688,11 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -668,19 +737,6 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "e7c575a6-93d9-4923-a577-b6e8fb595cf3",
-                  "title": "NoSQL Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                },
-                {
                   "id": "3dcbbe24-b20f-413c-af8e-dda81bfb2cba",
                   "title": "Unencrypted Data at Rest",
                   "status": "Open",
@@ -695,7 +751,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 0
@@ -704,8 +760,8 @@
           },
           {
             "position": {
-              "x": 325,
-              "y": 62
+              "x": 327.5,
+              "y": 60
             },
             "size": {
               "width": 112.5,
@@ -757,8 +813,8 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": 16
+              "x": 520,
+              "y": 76
             },
             "size": {
               "width": 112.5,
@@ -781,8 +837,8 @@
           },
           {
             "position": {
-              "x": 467.5,
-              "y": 235
+              "x": 537.5,
+              "y": 170
             },
             "size": {
               "width": 112.5,
@@ -805,7 +861,7 @@
           },
           {
             "position": {
-              "x": 687.5,
+              "x": 708.75,
               "y": 136
             },
             "size": {
@@ -834,7 +890,7 @@
           },
           {
             "position": {
-              "x": 698.75,
+              "x": 708.75,
               "y": 76
             },
             "size": {
@@ -861,6 +917,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 17
+    "threatTop": 26
   }
 }
